@@ -14,7 +14,7 @@
 </head>
 <body style="background-color: #E6F9E6;">
 
-	<%@ include file="header.jsp"%>
+	<jsp:include page="header.jsp" />
 	<%
 	String message = request.getParameter("message");
 	%>
