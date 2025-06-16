@@ -79,7 +79,7 @@
 					<p class="productinfo"><%=description%>..
 					</p>
 					<p class="price">
-						Rs
+						VND
 						<%=product.getProdPrice()%>
 					</p>
 					<form method="post">
