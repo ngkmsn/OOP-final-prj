@@ -37,7 +37,7 @@
 	</build>
 
 <dependencies>
-    <!-- Các dependency khác giữ nguyên -->
+  
     <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
@@ -48,24 +48,24 @@
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>3.1.0</version>
-        <scope>provided</scope>  <!-- Nên thêm scope provided cho servlet-api -->
+        <scope>provided</scope>  
     </dependency>
 
-    <!-- THAY ĐỔI QUAN TRỌNG: Chỉ cần implementation, không cần mail-api -->
+
     <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>jakarta.mail</artifactId>
         <version>2.0.1</version>
     </dependency>
 
-    <!-- Đảm bảo phiên bản activation tương thích -->
+
     <dependency>
         <groupId>com.sun.activation</groupId>
         <artifactId>jakarta.activation</artifactId>
         <version>2.0.1</version>
     </dependency>
 
-    <!-- Các dependency khác giữ nguyên -->
+
     <dependency>
         <groupId>javax.xml.ws</groupId>
         <artifactId>jaxws-api</artifactId>
