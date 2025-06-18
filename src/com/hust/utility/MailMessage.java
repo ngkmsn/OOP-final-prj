@@ -14,7 +14,7 @@ public class MailMessage {
 				+ "<br>We are providing upto 60% OFF on most of the electronic gadgets. So please visit our site and explore the collections."
 				+ "<br><br>Our Online electronics is growing in a larger amount these days and we are in high demand so we thanks all of you for "
 				+ "making us up to that level. We Deliver Product to your house with no extra delivery charges and we also have collection of most of the"
-				+ "branded items.<br><br>As a Welcome gift for our New Customers we are providing additional 10% OFF Upto 500 Rs for the first product purchase. "
+				+ "branded items.<br><br>As a Welcome gift for our New Customers we are providing additional 10% OFF Upto 500 VND for the first product purchase. "
 				+ "<br>To avail this offer you only have "
 				+ "to enter the promo code given below.<br><br><br> PROMO CODE: " + "HUST500<br><br><br>"
 				+ "Have a good day!<br>" + "" + "</body>" + "</html>";

@@ -19,7 +19,7 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public String paymentSuccess(String userName, double paidAmount) {
-		String status = "Order Placement Failed!";
+		String status = "Order Placed Successfully!";
 
 		List<CartBean> cartItems = new ArrayList<CartBean>();
 		cartItems = new CartServiceImpl().getAllCartItems(userName);
@@ -111,7 +111,7 @@ public class OrderServiceImpl implements OrderService {
 		PreparedStatement ps = null;
 
 		try {
-			ps = con.prepareStatement("insert into transactions values(?,?,?,?)");
+			ps = con.prepareStatement("insert into transactions(transid, username, time, amount) values(?,?,?,?)");
 
 			ps.setString(1, transaction.getTransactionId());
 			ps.setString(2, transaction.getUserName());

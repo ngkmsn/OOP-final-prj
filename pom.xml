@@ -36,47 +36,46 @@
 		</plugins>
 	</build>
 
-	<dependencies>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.33</version>
-		</dependency>
+<dependencies>
+    <!-- Các dependency khác giữ nguyên -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.33</version>
+    </dependency>
 
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.1.0</version>
+        <scope>provided</scope>  <!-- Nên thêm scope provided cho servlet-api -->
+    </dependency>
 
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-		</dependency>
+    <!-- THAY ĐỔI QUAN TRỌNG: Chỉ cần implementation, không cần mail-api -->
+    <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>jakarta.mail</artifactId>
+        <version>2.0.1</version>
+    </dependency>
 
-		<!-- https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api -->
-		<dependency>
-			<groupId>jakarta.mail</groupId>
-			<artifactId>jakarta.mail-api</artifactId>
-			<version>2.1.1</version>
-		</dependency>
+    <!-- Đảm bảo phiên bản activation tương thích -->
+    <dependency>
+        <groupId>com.sun.activation</groupId>
+        <artifactId>jakarta.activation</artifactId>
+        <version>2.0.1</version>
+    </dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.sun.mail/jakarta.mail -->
-		<dependency>
-			<groupId>com.sun.mail</groupId>
-			<artifactId>jakarta.mail</artifactId>
-			<version>2.0.1</version>
-		</dependency>
+    <!-- Các dependency khác giữ nguyên -->
+    <dependency>
+        <groupId>javax.xml.ws</groupId>
+        <artifactId>jaxws-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
 
-
-		<!-- https://mvnrepository.com/artifact/javax.xml.ws/jaxws-api -->
-		<dependency>
-			<groupId>javax.xml.ws</groupId>
-			<artifactId>jaxws-api</artifactId>
-			<version>2.3.1</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.15</version>
-		</dependency>
-	</dependencies>
+    <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>1.15</version>
+    </dependency>
+</dependencies>
 </project>
